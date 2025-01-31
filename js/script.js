@@ -43,6 +43,14 @@ function setupCarousel(mainSelector, thumbnailsSelector, prevSelector, nextSelec
     nextButton.addEventListener('click', showNextImage);
 }
 
+// Configurar carrusel para El ultimo aliento
+setupCarousel(
+    '#carousel-main-ultimoaliento', 
+    '#thumbnails-ultimoaliento', 
+    '#prev-ultimoaliento', 
+    '#next-ultimoaliento'
+);
+
 // Configurar carrusel para Moebius
 setupCarousel(
     '#carousel-main-moebius', 
