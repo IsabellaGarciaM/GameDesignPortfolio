@@ -187,7 +187,7 @@ const projects = [
         <p><strong>Three Different Realities: </strong> The incomplete spell transports the protagonist between the Temple of Time, the Ancient Ruins, and the Dark Castle, each with specific challenges and grimoire fragments to collect.<br><br>
         <strong>Progression Puzzles: </strong> The player solves puzzles in each environment to advance the story and unlock new areas in the other realities.</p>
         `,
-        reflectionHtml: `<p>Despite being an early-stage prototype, The Tale of the Broken Spell was a masterclass in pre-production and world-building. As the Art Director and PM, I focused on creating a robust Game Design Document (GDD) and a cohesive visual language that allowed a team of seven to stay aligned with the narrative vision. This experience taught me that a strong conceptual foundation is vital for consistency, especially when core mechanics are still in flux. However, it also highlighted the importance of rapid prototyping in Unity: I learned that validating the reality-shifting mechanic earlier would have allowed us to refine the interaction loop sooner. Moving forward, I aim to balance high-level documentation and aesthetic development with early mechanic validation to ensure the creative vision and technical implementation evolve in parallel.</p>`
+        reflectionHtml: `<p>Despite being an early-stage prototype, this project was a an experience in pre-production and world-building. As the Art Director and PM, I focused on creating a robust Game Design Document (GDD) and a cohesive visual language that allowed a team of seven to stay aligned with the narrative vision. This experience taught me that a strong conceptual foundation is vital for consistency, especially when core mechanics are still in flux. However, it also highlighted the importance of rapid prototyping in Unity: I learned that validating the reality-shifting mechanic earlier would have allowed us to refine the interaction loop sooner. Moving forward, I aim to balance high-level documentation and aesthetic development with early mechanic validation to ensure the creative vision and technical implementation evolve in parallel.</p>`
         ,
 
         media: [
@@ -326,3 +326,4 @@ function createToggle(title, content) {
 
 // Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', renderProjects);
+
