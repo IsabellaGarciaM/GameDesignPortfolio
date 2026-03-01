@@ -6,6 +6,7 @@ const projects = [
     {
         id: 'ultimoaliento',
         title: 'El último aliento',
+        roles: 'Project Manager | Artist | Game & Narrative Designer',
         description: 'El último aliento is a mobile narrative-driven game, with an endless runner mechanic, developed in 48 hours for the Global Game Jam 2025. The story follows an explorer embarking on a maritime expedition, hoping to return soon to confess their love to a special someone. However, the journey takes an unexpected turn, and now the player must navigate the oceans depths to retrieve the explorers final breath, which contains their heartfelt message. This game explores themes of love, loss, and the connection between life and death in a poignant and atmospheric setting.',
         detailsHtml: `
             <p><strong>Project Type:</strong> Narrative-driven Adventure (Game Jam)<br>
@@ -18,7 +19,6 @@ const projects = [
             &emsp;➥Daniel Florez<br>
             &emsp;➥Haruyoshie Ecima<br>
             &emsp;➥Julian González<br>
-            <strong>Roles:</strong> Project Manager, Artist, Game and narrative designer<br>
             <strong>Software Used:</strong> Unity 3D<br>
             <strong>Duration:</strong> January 24th - 26th 2025</p>
         `,
@@ -63,6 +63,7 @@ const projects = [
     {
     id: 'moebius',
     title: 'Möbius',
+    roles: 'Project Manager | Artistic Director | Story and Mechanics Director | Programmer',
     description: 'Möbius is a surreal horror RPG developed in 48 hours for the Unisabana Gamejam, where it earned first place. The story follows an astronaut who wakes up in a broken spaceship, trapped in a fragmented reality filled with analog horror elements. The player decisions shape the course of the story, leading to one of several possible endings. Inspired by psychological and analog horror, Möbius immerses players in a disconcerting, atmospheric world where every choice matters.',
     detailsHtml: `
         <p><strong>Project Type:</strong>  An RPG Demo with Decision Making (Game Jam)<br>
@@ -72,7 +73,6 @@ const projects = [
             &emsp;➥Shantal Ramirez Cubillos<br>
             &emsp;➥Julian Ayala<br>
             &emsp;➥Santiago Peña Beltran<br>
-            <strong>Roles:</strong> Project Manager, Artistic Director, Story and Mechanics Director, Programmer<br>
             <strong>Software Used:</strong> RPG Maker MV<br>
             <strong>Duration:</strong> June 3rd - 5th 2023</p>
             <strong>Awards & Recognition: </strong> First place award2023</p>
@@ -115,6 +115,7 @@ const projects = [
     {
         id: 'master',
         title: 'Master',
+        roles: 'Game Designer | Concept Artist',
         description: 'Master is a strategic card game developed as an academic project for the course Design I. Inspired by the mechanics of a popular card game (reference), Master adapts the dynamics of skill collection and direct confrontation between players, where each competes to accumulate the greatest amount of experience in various areas of life. Players must form sets of cards to advance, block the progress of their opponents, and challenge others to obtain additional cards.',
         detailsHtml: `
         <p><strong>Project Type:</strong>  A board game prototype.<br>
@@ -123,7 +124,6 @@ const projects = [
             &emsp;➥Natalia Fúquene Arias<br>
             &emsp;➥Mateo Montaño Gaona<br>
             &emsp;➥Luz Aydee Madrigal Diaz<br>
-            <strong>Roles:</strong> Game Designer and Concept Artist<br>
             <strong>Duration:</strong> March 8th - May 30th 2021</p>
     `,
          contributionsHtml: `
@@ -158,6 +158,7 @@ const projects = [
     {
         id: 'spell',
         title: 'The Tale of the Broken Spell',
+        roles: 'Project Manager | Artistic Director | Scriptwriter | Mechanics Designer',
         description: 'The Tale of the Broken Spell is a puzzle-platformer prototype developed during the Women Game Jam 2024. In the game, a young mage casts an incomplete spell to go back in time, transporting her to different versions of the same reality. Trapped in a time-space loop, the mage must explore three alternate environments of an ancient temple and collect fragments of a lost grimoire to complete the spell and return to her original world. Each reality offers unique clues and challenges that guide the player toward their ultimate goal.',
         detailsHtml: `
         <p><strong>Project Type:</strong> Prototype of a Puzzle and Platform Video Game with Reality-Changing Mechanics (Game Jam)<br>
@@ -171,7 +172,6 @@ const projects = [
             &emsp;➥David Santiago Frade<br>
             &emsp;➥vladizgg (Discord)<br>
             &emsp;➥vae_l (Discord)<br>
-            <strong>Roles:</strong> Project Manager, Artistic Director, Scriptwriter and Mechanics Designer<br>
             <strong>Software Used:</strong> Unity 3D<br>
             <strong>Duration:</strong> August 9th - 11th 2024</p>
     `,
@@ -301,6 +301,11 @@ function renderProjects() {
                     </div>
                     <div class="buttons">
                         ${p.buttons.map(b => `<a href="${b.href}" target="_blank">${b.label}</a>`).join('')}
+                    </div>
+                    <!-- SECCIÓN DE ROLES -->
+                    <div style="text-align: center; margin-top: 20px;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #333; text-transform: uppercase; letter-spacing: 1px;">Roles</h3>
+                        <p style="font-weight: 600; color: #555; margin: 0;">${p.roles}</p>
                     </div>
                 </div>
             </div>
