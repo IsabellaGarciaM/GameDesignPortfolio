@@ -332,4 +332,3 @@ function createToggle(title, content) {
 // Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', renderProjects);
 
-
