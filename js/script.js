@@ -304,7 +304,7 @@ function renderProjects() {
                     </div>
                     <!-- SECCIÓN DE ROLES -->
                     <div style="text-align: center; margin-top: 20px;">
-                        <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #333; text-transform: uppercase; letter-spacing: 1px;">Roles</h3>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #ec407a; text-transform: uppercase; letter-spacing: 1px;">Roles</h3>
                         <p style="font-weight: 600; color: #555; margin: 0;">${p.roles}</p>
                     </div>
                 </div>
@@ -331,4 +331,5 @@ function createToggle(title, content) {
 
 // Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', renderProjects);
+
 
