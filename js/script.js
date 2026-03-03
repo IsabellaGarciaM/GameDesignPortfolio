@@ -4,6 +4,57 @@
  */
 const projects = [
     {
+        id: 'wtm',
+        title: 'Within The Mirror',
+        roles: 'Game Developer | Game Designer | Narrative Designer | 2D Artist | Programmer',
+        description: `"Within the Mirror" is a narrative role-playing game (RPG) that combines psychological aspects of human behavior with fantasy elements to explore the mental struggles of people. The player follows Lila, a young psychologist who can perceive and confront her patients' inner demons, representing their emotional struggles. In this demo, the player works with Luna, a theatre student living with generalized anxiety. By placing the player in the role of the therapist and guiding them through Luna's case, the game aims to foster empathy, reduce stigma, and open space for reflection about mental health and the value of professional support.`,        detailsHtml: `
+            <p><strong>Project Type:</strong> Narrative Role-Playing Game / Serious Game (Demo)<br>
+            <strong>Context:</strong> Graduation Project for the Multimedia Engineering degree at the Nueva Granada Military University.<br>
+            <strong>Team size:</strong> 1 (Solo Developer)<br>
+            &emsp;➥Isabella Garcia Merlano<br>
+            &emsp;➥Academic advisor: Eduard L. Sierra-Ballen<br>
+            &emsp;➥Psychological advisor: Sandra Molano-Pacheco<br>
+            <strong>Software Used:</strong> RPG Maker MV<br>
+            <strong>Duration:</strong> 2023 - 2025</p>
+        `,
+        contributionsHtml: `
+            <ul>
+                <li><strong>Full-cycle design & development</strong>: Conceptualized and developed the entire demo, from initial research questions and narrative design to implementation in RPG Maker MV and preparation of the user testing sessions.</li>
+                <li><strong>Therapeutic framing & narrative design</strong>: Designed the story from the therapist’s point of view, putting the player in Lila’s role to guide a patient through a therapy session, with dialogue choices that shape the bond between Lila and Luna.</li>
+                <li><strong>Mechanics aligned with CBT principles</strong>: Worked with a psychologist to design abilities, dialogue options and outcomes that reflect elements of cognitive-behavioral therapy (CBT), such as cognitive restructuring, guided breathing and emotional validation.</li>
+                <li><strong>Collaboration with mental health experts</strong>: Iterated on the script, choices and endings based on continuous feedback from a psychology professional, ensuring an accurate, respectful and meaningful depiction of generalized anxiety.</li>
+            </ul>
+        `,
+        gameplayHtml: `
+            <ul>
+                <li><strong>Multiple-choice dialogue that shapes therapy</strong>: The core loop is built around interactive conversations between Lila and Luna. Player choices influence Luna’s level of trust, emotional regulation and readiness to face her anxiety, and they directly affect how the final sequence unfolds.</li>
+                <li><strong>Turn-based symbolic combat</strong>: The final boss battle represents Luna’s anxiety as an inner monster. The player uses abilities inspired by CBT techniques (e.g. challenging distorted thoughts, regulating breathing) to support Luna during a panic episode, connecting mechanics to psychological concepts.</li>
+                <li><strong>Branching outcomes and endings</strong>: The demo includes three possible endings (positive, neutral and negative) based on the player’s previous decisions and their performance in the final encounter, emphasizing that progress in therapy can have different paths and results.</li>
+            </ul>
+        `,
+        reflectionHtml: `
+            <p>“Within the Mirror” allowed me to explore how narrative, mechanics and psychological theory can work together to talk about mental health in an accessible and empathetic way. One of the biggest challenges was representing generalized anxiety and the therapeutic process without trivializing them, while still keeping the experience engaging for players. Designing from the therapist’s perspective taught me how powerful interactive dialogue and symbolic combat can be as tools for psychoeducation and empathy-building. This project reinforced my interest in Serious Games and mental health, and strengthened my ability to collaborate with experts outside of game development to create experiences that are both emotionally meaningful and responsible.</p>
+        `,
+        media: [
+            { type: 'video', src: 'https://www.youtube.com/embed/MN-P6jq5jBg?si=Oldc9Jqk4e0RIndh', thumb: 'ultimoalientoarch/uavidthumb.png' },
+            { type: 'image', src: 'ultimoalientoarch/ua1.png', thumb: 'ultimoalientoarch/ua1.png' },
+            { type: 'image', src: 'ultimoalientoarch/ua2.png', thumb: 'ultimoalientoarch/ua2.png' },
+            { type: 'image', src: 'ultimoalientoarch/ua3.gif', thumb: 'ultimoalientoarch/ua3.gif' },
+            { type: 'image', src: 'ultimoalientoarch/ua4.png', thumb: 'ultimoalientoarch/ua4.png' },
+            { type: 'image', src: 'ultimoalientoarch/ua5.gif', thumb: 'ultimoalientoarch/ua5.gif' },
+            { type: 'image', src: 'ultimoalientoarch/ua6.png', thumb: 'ultimoalientoarch/ua6.png' },
+            { type: 'image', src: 'ultimoalientoarch/ua7.gif', thumb: 'ultimoalientoarch/ua7.gif' }
+        ],
+        buttons: [
+            { label: 'Itch.io Page', href: 'https://mayvidev.itch.io/within-the-mirror' },
+            { label: 'Paper Page', href: 'https://ieeexplore.ieee.org/document/11114104' }
+        ]
+    },
+
+
+
+
+    {
         id: 'ultimoaliento',
         title: 'El último aliento',
         roles: 'Project Manager | Artist | Game & Narrative Designer',
@@ -331,4 +382,3 @@ function createToggle(title, content) {
 
 // Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', renderProjects);
-
