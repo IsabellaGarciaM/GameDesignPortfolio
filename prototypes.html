@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes | Isabella Garcia Merlano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="js/main.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    
+    <mi-header></mi-header>
+
+    <!-- TÍTULO DE LA SECCIÓN -->
+    <div class="page-intro">
+        <h2>Prototypes</h2>
+        <h3>Pre-Alphas | Experiments | Learning Space</h3>
+        <p>A collection of prototypes, proofs of concept, and interactive mechanics. A space dedicated to technical experimentation and continuous learning across various game engines.</p>
+    </div>
+
+    <!-- CUADRÍCULA DE PROTOTIPOS -->
+    <div class="prototypes-grid">
+        
+        <!-- Prototipo 1 -->
+        <div class="proto-card">
+            <img src="persecutionmechanic/1.gif" class="proto-media">
+            <div class="proto-content">
+                <div class="proto-tags">
+                    <span class="tag">Unity 3D</span>
+                    <span class="tag">C# Scripting</span>
+                    <span class="tag">AI Systems</span>
+                </div>
+                <h3>Maze Pursuit: AI & Line of Sight</h3>
+                <p>A playable stealth and chase prototype set in a maze. The focus was on programming an AI using basic geometry to demonstrate how detection systems, patrol routes, and alert states work together seamlessly.</p>
+                <button class="popup-btn" onclick="abrirModal('modal-pursuit')">View Technical Process</button>
+                <a href="https://nanavidev.itch.io/persecution-mechanic-unityprototype" class="external-btn secondary" style="text-align: center; width: 100%; box-sizing: border-box;">Try it here!</a>
+            </div>
+        </div>
+
+        <!-- Prototipo 2 -->
+        <div class="proto-card">
+            <img src="plinkoprototype/1.png" class="proto-media">
+            <div class="proto-content">
+                <div class="proto-tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C# Scripting</span>
+                    <span class="tag">Physics Systems</span>
+                </div>
+                <h3>Endless Plinko</h3>
+                <p>A playable prototype of a simple Plinko where the player drops spheres across an obstacle board to accumulate points. The goal was to design a dynamic scoring system and experiment with the behavior of gravity and collisions.</p>
+                <button class="popup-btn" onclick="abrirModal('modal-plinko')">View Technical Process</button>
+                <a href="https://nanavidev.itch.io/prototipo-de-conteo" class="external-btn secondary" style="text-align: center; width: 100%; box-sizing: border-box;">Try it here!</a>
+            </div>
+        </div>
+
+        <!-- Prototipo 3 -->
+        <div class="proto-card">
+            <img src="supersoccerchallenge/1.png" class="proto-media">
+            <div class="proto-content">
+                <div class="proto-tags">
+                    <span class="tag">Unity 3D</span>
+                    <span class="tag">C# Scripting</span>
+                    <span class="tag">AI & Physics</span>
+                </div>
+                <h3>Super Soccer Challenge: AI with Wave Spawning</h3>
+                <p>A playable prototype of an arcade-style soccer game where you control a ball to push enemies into their net and defend your own. It has progressive difficulty, fix vector math for collisions, and manage temporary power-ups using coroutines.</p>
+                <button class="popup-btn" onclick="abrirModal('modal-soccer')">View Technical Process</button>
+                <a href="https://nanavidev.itch.io/junior-programmer-unity-challenge-4" class="external-btn secondary" style="text-align: center; width: 100%; box-sizing: border-box;">Try it here!</a>
+            </div>
+        </div>
+
+        <!-- Prototipo 4 -->
+        <div class="proto-card">
+            <img src="whackafoodprototype/1.png" class="proto-media">
+            <div class="proto-content">
+                <div class="proto-tags">
+                    <span class="tag">Unity 3D</span>
+                    <span class="tag">C# Scripting</span>
+                    <span class="tag">UI Systems</span>
+                </div>
+                <h3>Whack-a-food!: Game Loop & UI Debugging</h3>
+                <p>A playable prototype of a "whack-a-mole" style game where the objective is to smash food appearing on a grid while avoiding skulls. The development focus was auditing a flawed codebase to repair the user interface, fix click detection, and program the game loop timer.</p>
+                <button class="popup-btn" onclick="abrirModal('modal-whack')">View Technical Process</button>
+                <a href="https://nanavidev.itch.io/whackafood" class="external-btn secondary" style="text-align: center; width: 100%; box-sizing: border-box;">Try it here!</a>
+            </div>
+        </div>
+
+    </div>
+
+</div> <!-- FIN DEL CONTAINER PRINCIPAL -->
+
+<mi-social></mi-social>
+
+<mi-footer></mi-footer>
+
+<!-- ========================================== -->
+<!-- MODALES PARA PROTOTIPOS (Fuera del container) -->
+<!-- ========================================== -->
+  <!-- MODAL MAZE PURSUIT -->
+<div id="modal-pursuit" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-pursuit')">✖</button>
+        <h3>AI State Machines & Evasion Mechanics</h3>
+        <li><strong>State Machines (Patrol vs. Chase)</strong>: I programmed the enemy's behavior by structuring independent logic flows: a passive patrol along a predefined path and an aggressive state that takes control of movement the moment the player enters the detection range.</li>
+        <li><strong>Line of Sight and Stealth</strong>: I implemented a vision system that constantly evaluates obstacles. To escape, the player must read the environment and use maze walls to break the direct line of sight, forcing the enemy to abandon the chase and resume its original patrol route.</li>
+        <li><strong>Game Flow (Fail State)</strong>: I set up an immediate penalty loop where colliding with the enemy transports the player back to the starting point (respawn). This creates a self-contained sandbox environment ideal for repeatedly iterating on evasion mechanics without loading screens.</li>
+    </div>
+</div>
+
+ <!-- MODAL PLINKO -->
+<div id="modal-plinko" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-plinko')">✖</button>
+        <h3>Probability Scoring & Physics Debugging</h3>
+        <li><strong>Scoring System (Triggers)</strong>: I programmed the point-collection logic using detection zones (triggers) at the bottom, assigning variable values that are dynamically added to the player's total score based on the bin where the sphere lands.</li>
+        <li><strong>Chance-based Mechanics</strong>: I designed the board layout to ensure the trajectory of each drop is unpredictable, evaluating how physical randomness interacts with player expectations within an endless gameplay loop.</li>
+        <li><strong>Physics Evaluation and Iteration</strong>: During testing, I identified a retention issue where spheres lose momentum and get stuck on obstacles, despite there being sufficient clearance. The next iteration step involves auditing the Physics Materials in Unity (reducing friction to zero and adjusting bounciness) and fine-tuning the Rigidbody's continuous collision detection.</li>
+    </div>
+</div>
+
+<!-- MODAL SUPER SOCCER -->
+<div id="modal-soccer" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-soccer')">✖</button>
+        <h3>System Debugging, AI & Wave Management</h3>
+        <li><strong>Collision Physics (Vectors)</strong>: Corrected the directional math for impacts. Modified the vector subtraction logic between positions to ensure the repulsion force pushed enemies away upon collision, rather than pulling them toward the player.</li>
+        <li><strong>Artificial Intelligence</strong>: Debugged critical assignment errors (resolving NullReferenceExceptions) to dynamically link the player's net as the enemies' primary target, causing them to actively seek to score instead of remaining stationary.</li>
+        <li><strong>Progressive Difficulty (Pacing)</strong>: Structured the Spawn Manager to mathematically scale the challenge. Programmed conditional loops that increase both the number of spawned enemies and their base movement speed with each new round.</li>
+        <li><strong>Ability Systems (Coroutines)</strong>: Implemented an input-activated "Turbo Boost" featuring visual feedback (particle systems). Additionally, fixed the power-up lifecycle using coroutines to ensure that stat boosts correctly expired after a set duration.</li>
+    </div>
+</div>
+
+<!-- MODAL WHACKAFOOD -->
+<div id="modal-whack" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-whack')">✖</button>
+        <h3>Debugging & System Implementation</h3>
+        <li><strong>Interaction Logic</strong>: I fixed critical errors in player input by replacing passive collision detection (OnMouseEnter) with active clicks (OnMouseDown) to ensure that point collection was intentional.</li>
+        <li><strong>Difficulty Balancing</strong>: I structured a difficulty parameter that communicates directly with the Game Manager, dynamically altering the object spawn rate based on the selected mode (Easy/Hard).</li>
+        <li><strong>Time and Status Management</strong>: I implemented a strict 60 second countdown timer using Time.deltaTime and Mathf.Round(). I integrated it with the Game Over sequence, ensuring the UI (scores and restart buttons) responded correctly to changes in the game state.</li>
+    </div>
+</div>
+
+</body>
+</html>

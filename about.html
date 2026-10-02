@@ -1,73 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Isabella García Merlano</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Estilos -->
+    <title>About Me | Isabella Garcia Merlano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- ESTILOS ESPECÍFICOS DEL ABOUT (Luego los pasas a styles.css) -->
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 50px;
+            margin-top: 20px;
+            align-items: start;
+        }
+
+        /* Columna Izquierda: Perfil y Contacto */
+        .profile-container {
+            position: sticky;
+            top: 40px;
+        }
+        
+        .profile-img {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #333;
+            border-bottom: 4px solid #ff4785;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 25px;
+            object-fit: cover;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            background: #1c1c1e; color: #fff; padding: 12px; border-radius: 6px;
+            text-decoration: none; font-weight: bold; font-size: 0.95rem;
+            text-align: center; transition: 0.2s; border: 1px solid #3f3f46;
+        }
+        .contact-btn:hover { background: #3f3f46; border-color: #ff4785; }
+        
+        .contact-btn.primary {
+            background: #ff4785; border-color: #ff4785; box-shadow: 0 4px 15px rgba(255, 71, 133, 0.3);
+        }
+        .contact-btn.primary:hover { background: #e03e73; transform: translateY(-2px); }
+
+        /* Columna Derecha: Texto y Skills */
+        .about-text h3 {
+            color: #ffffff; font-size: 2.2rem; margin: 0 0 20px 0; letter-spacing: -0.5px;
+        }
+        
+        .about-text p {
+            color: #d1d5db; font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px; text-align: justify;
+        }
+
+        .skills-section { margin-top: 40px; }
+        
+        .skills-category { margin-bottom: 25px; }
+        
+        .skills-category h4 {
+            color: #ffffff; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px;
+            border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 15px;
+        }
+        
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        
+        .skill-tag {
+            background: #2a2a2d; color: #9ca3af; padding: 6px 14px;
+            border-radius: 20px; font-size: 0.85rem; font-weight: bold;
+            border: 1px solid #3f3f46;
+        }
+        
+        /* Ajuste para pantallas pequeñas (móviles) */
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .profile-container { position: static; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <h1>Isabella García Merlano</h1>
-        <h2>Multimedia Engineer | Game Designer</h2>
-    </div>
 
-    <!-- Navigation -->
-    <div class="navigation">
-        <a href="index.html">Projects</a>
-        <a href="about.html" class="active">About me</a>
-    </div>
-
-    <!-- About Me Section -->
-    <div id="about">
-        <h1>About Me</h1>
-        <div class="content">
-            <!-- Left Column -->
-            <div class="about-text">
-                <p>
-                    Hi! I'm Isabella, a video game designer passionate about crafting narrative experiences and immersive worlds that emotionally connect with players. Through participating in Game Jams, I’ve explored design, art direction, narrative, and occasional programming roles, gaining valuable skills in quick decision-making, teamwork, and translating ideas into engaging mechanics.                </p>
-                <p>
-                    My focus as a designer is storytelling and creating impactful themes. I enjoy designing deep characters and alternate realities while experimenting with mechanics that challenge perceptions. My projects often explore topics like time, loneliness, and psychological struggles, inspired by genres such as psychological horror and narrative RPGs.                </p>
-                <p>
-                    I'm building my portfolio with creative and innovative projects, aiming to grow as a designer and contribute fresh perspectives to the video game industry. If you'd like to connect or discuss ideas, feel free to reach out. Thanks for stopping by! :)                </p>
-            </div>
-            <!-- Right Column -->
-            <div class="about-photo">
-                <img src="pfpcuadrado.jpg" alt="Isabella García Merlano">
-            </div>
-        </div>
-        <div class="buttons">
-            <span class="email-text">
-                <img src="icons/mail.png" alt="Email Icon" class="icon">
-                isagamerlano@gmail.com
-            </span>
-        </div>
-    </div>
-
+<div class="container">
     
+    <mi-header></mi-header>
 
-    <!-- Social media -->
+    <!-- SECCIÓN ABOUT ME -->
+    <div class="about-grid">
+        
+        <!-- Izquierda: Foto y Botones -->
+        <div class="profile-container">
+            <!-- Reemplaza el src con una foto tuya o un avatar genial -->
+            <img src="cv_2026/pfp.png" alt="Isabella Garcia" class="profile-img">
+            
+            <div class="contact-links">
+                <a href="cv_2026/CV_2026_IsabellaGarciaMerlano.pdf" target="_blank" class="contact-btn primary">Download Resume / CV</a>
+                <a href="mailto:isagamerlano@gmail.com" class="contact-btn">Contact Me</a>
+                <a href="https://www.linkedin.com/in/isagarciamerlano" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="https://nanavidev.itch.io/" target="_blank" class="contact-btn">Itch.io</a>
+            </div>
+        </div>
 
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/isagarciamerlano" target="_blank">
-            <img src="icons/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://mayvisan.itch.io" target="_blank">
-            <img src="icons/itchio.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/mayviesan/" target="_blank">
-            <img src="icons/instagram.png" alt="Instagram">
-        </a>
+        <!-- Derecha: Bio y Skills -->
+        <div class="about-text">
+            <h3>Hello! I'm Isabella.</h3>
+            
+            <p>I’m a Game Designer and Multimedia Engineer passionate about translating stories into engaging, structured game systems. I love building unique, narrative-driven experiences where the game mechanics actively drive the plot and evoke genuine player emotion.</p>
+            
+            <p>Through participating in Game Jams and academic projects, I’ve gained hands-on experience in design, art direction, and programming. I love designing deep characters and exploring psychological themes, often inspired by narrative RPGs and psychological horror.</p>
+            
+            <p>I am currently seeking an entry-level Game Design position where I can contribute to meaningful projects, collaborate with cross-disciplinary teams, and continue to grow my skills in narrative and systems design.</p>
+
+            <!-- Habilidades Técnicas -->
+            <div class="skills-section">
+                
+                <div class="skills-category">
+                    <h4>Design & Disciplines</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Game Design</span>
+                        <span class="skill-tag">Narrative Design</span>
+                        <span class="skill-tag">Systems Design</span>
+                        <span class="skill-tag">Level Design</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Serious Games</span>
+                        <span class="skill-tag">Digital Marketing</span>
+                        <span class="skill-tag">UX/UI</span>
+                        <span class="skill-tag">3D Modelling</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Engines & Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Unity 3D / 2D</span>
+                        <span class="skill-tag">Godot</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                        <span class="skill-tag">RPG Maker MV</span>
+                        <span class="skill-tag">Game Maker</span>
+                        <span class="skill-tag">Twine</span>
+                        <span class="skill-tag">GitHub / Version Control</span>
+                        <span class="skill-tag">Blender</span>
+                        <span class="skill-tag">Maya</span>
+                        <span class="skill-tag">Substance Painter</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Trello</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML / CSS / JS</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Isabella García Merlano. All rights reserved.</p>
-        <p>Projects and materials property of their respective owners.</p>
-    </footer>    
+</div> <!-- FIN DEL CONTAINER -->
+
+<mi-social></mi-social>
+
+<mi-footer></mi-footer>
+
+<script defer src="js/main.js"></script>
 
 </body>
 </html>

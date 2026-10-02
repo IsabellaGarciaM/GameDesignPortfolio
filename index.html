@@ -1,64 +1,549 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabella Garcia | Game Designer | Projects</title>
-    <!-- Fuente de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap" rel="stylesheet">
+    <title>Isabella Garcia Merlano - Game Designer and Multimedia Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script defer src="js/main.js"></script>
 </head>
+
 <body>
-    <!-- Header -->
-    <div class="header">
-        <h1>Isabella García Merlano</h1>
-        <h2>Multimedia Engineer | Game Designer</h2>
+
+<div class="container">
+
+    <mi-header></mi-header>
+
+    <!-- ========================================== -->
+    <!-- PROYECTO 1: WITHIN THE MIRROR              -->
+    <!-- ========================================== -->
+    <div class="case-study">
+        <div class="case-text">
+            <h3>Within The Mirror</h3>
+            <div class="roles">Lead Game Designer | Narrative Designer | Solo Developer</div>
+            
+            <p style="text-align: justify;"><strong><em>Within the Mirror</em></strong> is a narrative role-playing game (RPG) where the player assumes the role of a therapist (Lila). By combining branching dialogue mechanics and CBT-inspired turn-based combat, the player must guide a patient (Luna) through a panic episode. The game translates real-world psychological frameworks into structured, interactive systems to foster empathy and explore mental health struggles.</p>
+            
+            <div class="section-title">More information</div>
+            <div class="artifacts">
+                <button class="popup-btn" onclick="abrirModal('modal-detalles-wtm')">Project details</button>
+                <button class="popup-btn" onclick="abrirModal('modal-gameplay-wtm')">Gameplay Components</button>
+                <button class="popup-btn" onclick="abrirModal('modal-responsabilidades-wtm')">Key Contributions and Responsibilities</button>
+                <button class="popup-btn" onclick="abrirModal('modal-reflexion-wtm')">Reflection and Learning</button>
+        </div>
     </div>
-
-    <!-- Navigation -->
-    <div class="navigation">
-        <a href="index.html">Projects</a>
-        <a href="about.html" class="active">About me</a>
-    </div>
-
-    <!-- Main Content -->
-    
-    <!-- Projects Section -->
-
-    <div id="projects">
-        <h1>Projects</h1>
         
-        <!-- Featured Projects Section -->
-        <div id="featured-projects">
-            <h2>Featured Projects</h2>
-            <div id="projects-container">
-        <!-- Los proyectos se cargarán aquí automáticamente desde script.js -->
+        <div class="case-media">
+            <div class="carousel-container" id="carousel-wtm">
+                <div class="carousel-main">
+                    <button class="nav-btn prev-btn">❮</button>
+                    <iframe class="media-item active" width="560" height="315" src="https://www.youtube.com/embed/MN-P6jq5jBg?si=Limtuok70Y5LQcv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="WithinTheMirror/1.png" class="media-item">
+                    <img src="WithinTheMirror/2.gif" class="media-item">
+                    <img src="WithinTheMirror/3.png" class="media-item">
+                    <img src="WithinTheMirror/4.gif" class="media-item">
+                    <img src="WithinTheMirror/5.png" class="media-item">
+                    <img src="WithinTheMirror/6.gif" class="media-item">
+                    <img src="WithinTheMirror/7.png" class="media-item">
+                    <img src="WithinTheMirror/8.gif" class="media-item">
+                    <img src="WithinTheMirror/9.png" class="media-item">
+                    <img src="WithinTheMirror/10.gif" class="media-item">
+                    <button class="nav-btn next-btn">❯</button>
+                </div>
+                <div class="carousel-thumbnails">
+                    <img src="WithinTheMirror/wtm-thumb.png" class="thumb active">
+                    <img src="WithinTheMirror/1.png" class="thumb">
+                    <img src="WithinTheMirror/2.gif" class="thumb">
+                    <img src="WithinTheMirror/3.png" class="thumb">
+                    <img src="WithinTheMirror/4.gif" class="thumb">
+                    <img src="WithinTheMirror/5.png" class="thumb">
+                    <img src="WithinTheMirror/6.gif" class="thumb">
+                    <img src="WithinTheMirror/7.png" class="thumb">
+                    <img src="WithinTheMirror/8.gif" class="thumb">
+                    <img src="WithinTheMirror/9.png" class="thumb">
+                    <img src="WithinTheMirror/10.gif" class="thumb">
+                </div>
             </div>
-        </div>    
-
-    <!-- Social media -->
-
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/isagarciamerlano" target="_blank">
-            <img src="icons/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://mayvisan.itch.io" target="_blank">
-            <img src="icons/itchio.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/mayviesan/" target="_blank">
-            <img src="icons/instagram.png" alt="Instagram">
-        </a>
+            
+            <div class="external-links">
+                <a href="https://nanavidev.itch.io/within-the-mirror" target="_blank" class="external-btn">Itch.io page</a>
+                <a href="https://ieeexplore.ieee.org/document/11114104" target="_blank" class="external-btn secondary">Paper page</a>
+            </div>
+        </div>
     </div>
+
+    <!-- ========================================== -->
+    <!-- PROYECTO 2: EL ÚLTIMO ALIENTO              -->
+    <!-- ========================================== -->
+    <div class="case-study">
+        <div class="case-text">
+            <h3>El último aliento</h3>
+            <div class="roles">Project Manager | Game & Narrative Designer | 2D Artist & Animator</div>
+            
+            <p style="text-align: justify;"><strong><em>El último aliento</em></strong> is a mobile narrative-driven endless runner developed in 48 hours for the Global Game Jam 2025. The player controls a fragile bubble (representing an explorer's final breath) navigating ocean depths and managing gravity mechanics to deliver a final message of love. The game translates themes of loss and human connection into a precise, physics-based gameplay loop.</p>
+            
+            <div class="section-title">More information</div>
+            <div class="artifacts">
+                <button class="popup-btn" onclick="abrirModal('modal-detalles-eua')">Project details</button>
+                <button class="popup-btn" onclick="abrirModal('modal-gameplay-eua')">Gameplay Components</button>
+                <button class="popup-btn" onclick="abrirModal('modal-responsabilidades-eua')">Key Contributions and Responsibilities</button>
+                <button class="popup-btn" onclick="abrirModal('modal-reflexion-eua')">Reflection and Learning</button>
+            </div>
+        </div>
+        
+        <div class="case-media">
+            <div class="carousel-container" id="carousel-eua">
+                <div class="carousel-main">
+                    <button class="nav-btn prev-btn">❮</button>
+                    <iframe class="media-item active" width="560" height="315" src="https://www.youtube.com/embed/cpNldK0s_Zo?si=gi5tj87jmtN4jDAH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="ultimoalientoarch/ua1.png" class="media-item">
+                    <img src="ultimoalientoarch/ua2.png" class="media-item">
+                    <img src="ultimoalientoarch/ua3.gif" class="media-item">
+                    <img src="ultimoalientoarch/ua4.png" class="media-item">
+                    <img src="ultimoalientoarch/ua5.gif" class="media-item">
+                    <img src="ultimoalientoarch/ua6.png" class="media-item">
+                    <img src="ultimoalientoarch/ua7.gif" class="media-item">
+                    <button class="nav-btn next-btn">❯</button>
+                </div>
+                <div class="carousel-thumbnails">
+                    <img src="ultimoalientoarch/ua-thumb.png" class="thumb active">
+                    <img src="ultimoalientoarch/ua1.png" class="thumb">
+                    <img src="ultimoalientoarch/ua2.png" class="thumb">
+                    <img src="ultimoalientoarch/ua3.gif" class="thumb">
+                    <img src="ultimoalientoarch/ua4.png" class="thumb">
+                    <img src="ultimoalientoarch/ua5.gif" class="thumb">
+                    <img src="ultimoalientoarch/ua6.png" class="thumb">
+                    <img src="ultimoalientoarch/ua7.gif" class="thumb">
+                </div>
+            </div>
+            
+            <div class="external-links">
+                <a href="https://nanavidev.itch.io/el-ultimo-aliento" target="_blank" class="external-btn">Itch.io page</a>
+            </div>
+        </div>
+    </div>
+
     
-    <footer class="footer">
-        <p>&copy; 2026 Isabella García Merlano. All rights reserved.</p>
-        <p>Projects and materials property of their respective owners.</p>
-    </footer>    
 
-    <script src="js/script.js"></script>
+
+
+    <!-- ========================================== -->
+    <!-- PROYECTO 3: MÖBIUS                         -->
+    <!-- ========================================== -->
+    <div class="case-study">
+        <div class="case-text">
+            <h3>Möbius</h3>
+            <div class="roles">Project Manager | Lead Game Designer | Art Director | Programmer </div>
+            
+            <p style="text-align: justify;"><strong><em>Möbius</em></strong> is an award-winning surreal horror Role-Playing Game (RPG) developed in 48 hours for the Unisabana Gamejam (1st Place). Set in a damaged spaceship, the player navigates an analog horror time loop where environmental puzzles and critical choices dynamically branch into three distinct endings. The game translates themes of psychological isolation and cosmic horror into a tense, consequence-driven gameplay loop.</p>
+            
+            <div class="section-title">More information</div>
+            <div class="artifacts">
+                <button class="popup-btn" onclick="abrirModal('modal-detalles-moebius')">Project details</button>
+                <button class="popup-btn" onclick="abrirModal('modal-gameplay-moebius')">Gameplay Components</button>
+                <button class="popup-btn" onclick="abrirModal('modal-responsabilidades-moebius')">Key Contributions and Responsibilities</button>
+                <button class="popup-btn" onclick="abrirModal('modal-reflexion-moebius')">Reflection and Learning</button>
+            </div>
+        </div>
+        
+        <div class="case-media">
+            <div class="carousel-container" id="carousel-moebius">
+                <div class="carousel-main">
+                    <button class="nav-btn prev-btn">❮</button>
+                    <iframe class="media-item active" width="560" height="315" src="https://www.youtube.com/embed/U7DRRBGznNQ?si=hN2ShDJgHpyGMVrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="mobiusarch/mob1.png" class="media-item">
+                    <img src="mobiusarch/mob2.gif" class="media-item">
+                    <img src="mobiusarch/mob3.png" class="media-item">
+                    <img src="mobiusarch/mob4.gif" class="media-item">
+                    <img src="mobiusarch/mob5.gif" class="media-item">
+                    <img src="mobiusarch/mob6.png" class="media-item">
+                    <img src="mobiusarch/mob7.gif" class="media-item">
+                    <button class="nav-btn next-btn">❯</button>
+                </div>
+                <div class="carousel-thumbnails">
+                    <img src="mobiusarch/mobius-thumb.png" class="thumb active">
+                    <img src="mobiusarch/mob1.png" class="thumb">
+                    <img src="mobiusarch/mob2.gif" class="thumb">
+                    <img src="mobiusarch/mob3.png" class="thumb">
+                    <img src="mobiusarch/mob4.gif" class="thumb">
+                    <img src="mobiusarch/mob5.gif" class="thumb">
+                    <img src="mobiusarch/mob6.png" class="thumb">
+                    <img src="mobiusarch/mob7.gif" class="thumb">
+                </div>
+            </div>
+            
+            <div class="external-links">
+                <a href="https://nanavidev.itch.io/moebius" target="_blank" class="external-btn">Itch.io page</a>
+                <a href="mobiusarch/Game Design Document Moebius.pdf" target="_blank" class="external-btn secondary">Game Design Document (GDD)</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- PROYECTO 4: NIGHTLIGHT                     -->
+    <!-- ========================================== -->
+    <div class="case-study">
+        <div class="case-text">
+            <h3>Nightlight</h3>
+            <div class="roles">Game Designer | UI Designer | 2D Artist </div>
+            
+            <p style="text-align: justify;"><strong><em>Nightlight</em></strong> is a top-down stealth and puzzle game developed for the Limited Capacity Game Jam. Designed around the childhood fear of crossing a dark hallway, the player controls a vulnerable child evading a nightmare monster. Strictly adhering to the Jam's theme, the core experience relies on a "Free Hand" limited-capacity system, forcing players to make tense risk-reward decisions between maintaining stealth or transporting heavy puzzle objects to reach safety.</p>
+            
+            <div class="section-title">More information</div>
+            <div class="artifacts">
+                <button class="popup-btn" onclick="abrirModal('modal-detalles-night')">Project details</button>
+                <button class="popup-btn" onclick="abrirModal('modal-gameplay-night')">Gameplay Components</button>
+                <button class="popup-btn" onclick="abrirModal('modal-responsabilidades-night')">Key Contributions and Responsibilities</button>
+                <button class="popup-btn" onclick="abrirModal('modal-reflexion-night')">Reflection and Learning</button>
+            </div>
+        </div>
+        
+        <div class="case-media">
+            <div class="carousel-container" id="carousel-night">
+                <div class="carousel-main">
+                    <button class="nav-btn prev-btn">❮</button>
+                    <iframe class="media-item active" width="560" height="315" src="https://www.youtube.com/embed/yHXRtA7lOzw?si=LX2gdM3hqnkYMeaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="nightlightarch/10.png" class="media-item">
+                    <img src="nightlightarch/1.gif" class="media-item">
+                    <img src="nightlightarch/2.png" class="media-item">
+                    <img src="nightlightarch/3.gif" class="media-item">
+                    <img src="nightlightarch/4.png" class="media-item">
+                    <img src="nightlightarch/5.gif" class="media-item">
+                    <img src="nightlightarch/6.png" class="media-item">
+                    <img src="nightlightarch/7.gif" class="media-item">
+                    <img src="nightlightarch/8.png" class="media-item">
+                    <img src="nightlightarch/9.gif" class="media-item">
+                    <button class="nav-btn next-btn">❯</button>
+                </div>
+                <div class="carousel-thumbnails">
+                    <img src="nightlightarch/night-thumb.png" class="thumb active">
+                    <img src="nightlightarch/10.png" class="thumb">
+                    <img src="nightlightarch/1.gif" class="thumb">
+                    <img src="nightlightarch/2.png" class="thumb">
+                    <img src="nightlightarch/3.gif" class="thumb">
+                    <img src="nightlightarch/4.png" class="thumb">
+                    <img src="nightlightarch/5.gif" class="thumb">
+                    <img src="nightlightarch/6.png" class="thumb">
+                    <img src="nightlightarch/7.gif" class="thumb">
+                    <img src="nightlightarch/8.png" class="thumb">
+                    <img src="nightlightarch/9.gif" class="thumb">
+                </div>
+            </div>
+            
+            <div class="external-links">
+                <a href="https://sebastian-franco-gomez.itch.io/nightlight" target="_blank" class="external-btn">Itch.io page</a>
+                <a href="https://docs.google.com/document/d/1sogpzQ3fdEI3832oJIMV4qRqqgcsHr4dfKcosJ-gMGQ/edit?usp=sharing" target="_blank" class="external-btn secondary">Game Design Document (GDD)</a>
+           </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ========================================== -->
+    <!-- PROYECTO 5: ROMANCE PROTOCOL               -->
+    <!-- ========================================== -->
+    <div class="case-study">
+        <div class="case-text">
+            <h3>Romance Protocol</h3>
+            <div class="roles">Game Designer | Narrative Designer | Art Director </div>
+            
+            <p style="text-align: justify;"><strong><em>Romance Protocol</em></strong> is a satirical First-Person Shooter developed in 72 hours who redefines the FPS genre. The player controls a human in a monster school who must survive not through violence, but by shooting compliments and affection. The game subverts traditional combat mechanics into a frantic dating-sim chase, where monsters flee from positivity and a terrifying, romance immune Principal actively hunts the player down.</p>
+            
+            <div class="section-title">More information</div>
+            <div class="artifacts">
+                <button class="popup-btn" onclick="abrirModal('modal-detalles-romance')">Project details</button>
+                <button class="popup-btn" onclick="abrirModal('modal-gameplay-romance')">Gameplay Components</button>
+                <button class="popup-btn" onclick="abrirModal('modal-responsabilidades-romance')">Key Contributions and Responsibilities</button>
+                <button class="popup-btn" onclick="abrirModal('modal-reflexion-romance')">Reflection and Learning</button>
+            </div>
+        </div>
+        
+        <div class="case-media">
+            <div class="carousel-container" id="carousel-romance">
+                <div class="carousel-main">
+                    <button class="nav-btn prev-btn">❮</button>
+                    <iframe class="media-item active" width="560" height="315" src="https://www.youtube.com/embed/8Lv2W1rphB0?si=EJXyd5wHn2VBEYF3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="romancearch/1.png" class="media-item">
+                    <img src="romancearch/2.gif" class="media-item">
+                    <img src="romancearch/3.png" class="media-item">
+                    <img src="romancearch/4.gif" class="media-item">
+                    <img src="romancearch/5.png" class="media-item">
+                    <img src="romancearch/6.gif" class="media-item">
+                    <img src="romancearch/7.png" class="media-item">
+                    <img src="romancearch/8.gif" class="media-item">
+                    <img src="romancearch/9.png" class="media-item">
+                    <button class="nav-btn next-btn">❯</button>
+                </div>
+                <div class="carousel-thumbnails">
+                    <img src="romancearch/romance-thumb.png" class="thumb active">
+                    <img src="romancearch/1.png" class="thumb">
+                    <img src="romancearch/2.gif" class="thumb">
+                    <img src="romancearch/3.png" class="thumb">
+                    <img src="romancearch/4.gif" class="thumb">
+                    <img src="romancearch/5.png" class="thumb">
+                    <img src="romancearch/6.gif" class="thumb">
+                    <img src="romancearch/7.png" class="thumb">
+                    <img src="romancearch/8.gif" class="thumb">
+                    <img src="romancearch/9.png" class="thumb">
+                </div>
+            </div>
+            
+            <div class="external-links">
+                <a href="https://nanavidev.itch.io/romance-protocol" target="_blank" class="external-btn">Itch.io page</a>
+                <a href="https://docs.google.com/document/d/1-xoxntetHewhSeUi2CKNCpC8sG9BqFtTGs4csUw-Xx8/edit?usp=sharing" target="_blank" class="external-btn secondary">Game Design Document (GDD)</a>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- AQUÍ SE CIERRA EL CONTAINER PRINCIPAL -->
+
+<mi-social></mi-social>
+
+<mi-footer></mi-footer>
+
+<!-- ====================================================================== -->
+<!-- TODOS LOS POP-UPS (MODALES) DEBEN IR AQUÍ ABAJO, FUERA DEL CONTAINER   -->
+<!-- ====================================================================== -->
+
+<!-- Modales WTM -->
+<div id="modal-detalles-wtm" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-detalles-wtm')">✖</button>
+        <h3>Project details</h3>
+        <p><strong>Project Type:</strong> Narrative RPG / Serious Game (Demo)<br>
+        <strong>Context:</strong> Graduation Project for the Multimedia Engineering degree at the Nueva Granada Military University.<br>
+        <strong>Team size:</strong> 1 (Solo Developer)<br>
+        <strong>Advisors:</strong> Eduard L. Sierra-Ballen (Academic) & Sandra Molano-Pacheco (Psychological)<br>
+        <strong>Software Used:</strong> RPG Maker MV<br>
+        <strong>Duration:</strong> 2023 - 2025</p>
+    </div>
+</div>
+
+<div id="modal-responsabilidades-wtm" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-responsabilidades-wtm')">✖</button>
+        <h3>Key Contributions and Responsibilities</h3>
+        <ul>
+            <li><strong>Full-cycle design & development</strong>: Conceptualized and developed the entire demo in RPG Maker MV, managing everything from the initial Game Design Document (GDD) and narrative design to the execution of user testing sessions.</li>
+            <li><strong>Therapeutic System Design</strong>: Translated real-world psychological frameworks into playable mechanics, ensuring a respectful and accurate representation of generalized anxiety.</li>
+            <li><strong>Interdisciplinary Collaboration</strong>: Iterated on narrative scripts and dialogue trees based on continuous feedback from a licensed psychologist, effectively bridging game design with clinical psychoeducation.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-gameplay-wtm" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-gameplay-wtm')">✖</button>
+        <h3>Gameplay Components</h3>
+        <ul>
+            <li><strong>Dialogue System & Hidden Variables</strong>: Designed a branching narrative core loop built around interactive therapy sessions. Player dialogue choices dynamically adjust backend variables (such as Luna's Trust and Emotional Regulation). These metrics dictate the flow of the session and unlock specific narrative branches.</li>
+            <li><strong>CBT-Driven Turn-Based Combat</strong>: Engineered a symbolic combat system where traditional RPG mechanics are replaced by Cognitive-Behavioral Therapy (CBT) techniques. Designed abilities (e.g., 'Challenge Distorted Thoughts', 'Guided Breathing') with specific values to mitigate the boss's (Anxiety) attack patterns.</li>
+            <li><strong>Conditional Branching Endings</strong>: Structured the game's logic to calculate a final state based on cumulative dialogue variables and combat efficiency, resulting in three distinct conditional endings (positive, neutral, and negative).</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-reflexion-wtm" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-reflexion-wtm')">✖</button>
+        <h3>Reflection and Learning</h3>
+        <p style="text-align: justify;"><strong><em>Within the Mirror</em></strong> allowed me to explore how narrative, mechanics, and psychological theory can work together to talk about mental health in an accessible way. One of the biggest challenges was representing generalized anxiety without trivializing it, while keeping the experience engaging.</p>
+        <p style="text-align: justify;">Designing from the therapist’s perspective taught me how powerful conditional dialogue and symbolic combat can be as tools for empathy-building. This project reinforced my passion for Serious Games and strengthened my ability to collaborate with non-gaming experts to create responsible, emotionally meaningful experiences.</p>
+    </div>
+</div>
+
+<!-- Modales EUA -->
+<div id="modal-detalles-eua" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-detalles-eua')">✖</button>
+        <h3>Project details</h3>
+        <p><strong>Project Type:</strong> Narrative-driven Endless Runner (Mobile)<br>
+        <strong>Game Jam:</strong> Global Game Jam 2025<br>
+        <strong>Team size:</strong> 6 members<br>
+        <strong>Software Used:</strong> Unity 3D<br>
+        <strong>Duration:</strong> 48 Hours (Jan 24th - 26th, 2025)</p>
+    </div>
+</div>
+
+<div id="modal-responsabilidades-eua" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-responsabilidades-eua')">✖</button>
+        <h3>Key Contributions and Responsibilities</h3>
+        <ul>
+            <li><strong>Project Management & Scoping</strong>: Directed a multidisciplinary team of 6 (artists, developers, and sound designers), establishing clear pipelines to ensure a fully playable build within the strict 48-hour deadline.</li>
+            <li><strong>Mechanics & Narrative Integration</strong>: Developed the core storyline and intertwined the protagonist's inner conflict directly with the gameplay loop, ensuring the emotional beats enhanced the player's experience.</li>
+            <li><strong>Art Direction</strong>: Defined the atmospheric, melancholic visual identity and created key 2D assets (elements and environments) to support the narrative tone.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-gameplay-eua" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-gameplay-eua')">✖</button>
+        <h3>Gameplay Components</h3>
+        <ul>
+            <li><strong>Physics-Based Bubble Mechanic</strong>: The core it’s a modified endless runner system where player inputs (taps) shift the bubble's direction against a moving arrow. Designed variables for gravity management and size reduction to simulate the fragility of a breath underwater.</li>
+            <li><strong>Dual Game Modes</strong>: A Story Mode driven by milestone-based narrative reveals, alongside an Endless/Record Mode focused on distance and obstacle avoidance to encourage replayability.</li>
+            <li><strong>Obstacle & Difficulty Pacing</strong>: It has a balance of the spawn rates of marine creatures and environmental hazards to create tension without breaking the atmospheric pacing required by the story.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-reflexion-eua" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-reflexion-eua')">✖</button>
+        <h3>Reflection and Learning</h3>
+        <p style="text-align: justify;">Developing <strong><em>El último aliento</em></strong> under a strict 48-hour deadline taught me how to rapidly prototype mechanics that directly serve a thematic purpose. Tying the protagonist's emotional desire to a fragile, physics-driven bubble helped me deepen my understanding of how gameplay can reflect story themes.</p>
+        <p style="text-align: justify;">Due to the strict timeframe, we had to drastically scope down and cut the planned Story Mode. However, I learned how to creatively pivot under pressure: to preserve the game's melancholic atmosphere, I integrated narrative hints and contextual lore directly into the Game Over screen. This taught me how to maintain narrative cohesion and emotional impact even when major features have to be cut for production reasons. Furthermore, managing a 6-person team sharpened my scoping skills, proving that tight communication is just as important as technical execution.</p>
+    </div>
+</div>
+
+<!-- Modales MOEBIUS -->
+<div id="modal-detalles-moebius" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-detalles-moebius')">✖</button>
+        <h3>Project details</h3>
+        <p><strong>Project Type:</strong> Surreal Horror RPG.<br>
+        <strong>Game Jam:</strong> Unisabana Gamejam 2023.<br>
+        <strong>Team size:</strong> 4 members.<br>
+        <strong>Software Used:</strong> RPG Maker MV (Pivoted from Unity).<br>
+        <strong>Duration:</strong> 48 Hours (June 3rd - 5th, 2023)</p>
+        <strong>Awards & Recognition:</strong> First place at Unisabana Gamejam 2023.</p>
+    </div>
+</div>
+
+<div id="modal-responsabilidades-moebius" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-responsabilidades-moebius')">✖</button>
+        <h3>Key Contributions and Responsibilities</h3>
+        <ul>
+            <li><strong>Project Management & Agile Leadership</strong>: Led a 4-person team as Project Manager and Lead Developer, coordinating art, sound, and programming pipelines under a strict 48-hour deadline.</li>
+            <li><strong>Systems & Narrative Direction</strong>: Designed the core branching narrative and implemented the decision-making system that seamlessly tracks player choices to trigger multiple endings.</li>
+            <li><strong>Art Direction</strong>: Defined the game's analog horror aesthetic, creating a claustrophobic, unsettling atmosphere that visually reinforced the themes of isolation and cosmic dread.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-gameplay-moebius" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-gameplay-moebius')">✖</button>
+        <h3>Gameplay Components</h3>
+        <ul>
+            <li><strong>Persistent Loop Mechanics</strong>: It was designed a death system where the player respawns, but previous dead bodies remain permanently in the environment. This utilized environmental storytelling to reinforce the time-loop narrative and increase psychological tension.</li>
+            <li><strong>Consequence-Driven Interactions</strong>:  Environmental puzzles (e.g., repairing main batteries, administering colored syringes, fixing engine gears), where incorrect variables or logic result in immediate fatal outcomes.</li>
+            <li><strong>Conditional Branching Endings</strong>:  The final control panel logic allows the player to activate the ship, flee, or assume the role of the "elevator entity" through a three-button final decision matrix.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-reflexion-moebius" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-reflexion-moebius')">✖</button>
+        <h3>Reflection and Learning</h3>
+        <p style="text-align: justify;"> Serving as a Lead Developer for <strong><em>Möbius</em></strong> was a lesson on agile pivoting and scope management. The most critical decision I made was directing a mid-jam technical pivot from Unity to RPG Maker. While risky, this strategic shift allowed us to prioritize our narrative goals and deliver a highly polished experience with three distinct endings, ultimately winning first place.</p>
+        <p style="text-align: justify;"> This project highlighted the vital importance of early time management and clear role definition. I learned that without strict internal deadlines, even the best creative ideas suffer from bottlenecks. Moving forward, I integrated agile tools like Trello and robust GDD documentation into my workflow to ensure art, sound, and code remain synchronized from day one.</p>
+    </div>
+</div>
+
+<!-- Modales NIGHT -->
+<div id="modal-detalles-night" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-detalles-night')">✖</button>
+        <h3>Project details</h3>
+        <p><strong>Project Type:</strong> 2D Stealth & Puzzle Adventure<br>
+        <strong>Game Jam:</strong> Limited Capacity Game Jam (Junior Unity Developer Bootcamp)<br>
+        <strong>Team size:</strong> 4 members<br>
+        <strong>Software Used:</strong> Unity 3D<br>
+        <strong>Duration:</strong> 48 hours (March 9th - 11th, 2026)</p>
+    </div>
+</div>
+
+<div id="modal-responsabilidades-night" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-responsabilidades-night')">✖</button>
+        <h3>Key Contributions and Responsibilities</h3>
+        <ul>
+            <li><strong>Thematic Systems Design</strong>: Conceptualized and documented the "Free Hand" mechanic and the weight-based puzzle logic as a direct, mechanical translation of the Jam's "Limited Capacity" theme, reinforcing the game's foundational pillars of vulnerability and atmospheric tension.</li>
+            <li><strong>UI Design & Implementation</strong>: Designed the user interface, including the flashlight energy meters and inventory state indicators, ensuring clear visual feedback during the tense AI chases.</li>
+            <li><strong>2D Art & Assets</strong>: Created foundational 2D pixel art sprites and integrated external assets to establish the top-down aesthetic and claustrophobic tone of the environment.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-gameplay-night" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-gameplay-night')">✖</button>
+        <h3>Gameplay Components</h3>
+        <ul>
+            <li><strong>"Free Hand" Risk-Reward System</strong>: A dual-wielding limited capacity mechanic where the player holds a depleting flashlight in one hand and a single item in the other. Dropping the starting "teddy bear" (which acts as a stealth/noise-reduction buff) to carry puzzle pieces dynamically increases the player's noise output and vulnerability.</li>
+            <li><strong>Line of Sight AI & Stealth</strong>: A state machine driven monster AI that transitions between patrolling and chasing based on the player's visibility and noise levels, forcing strategic use of environmental cover.</li>
+            <li><strong>Weight-Logic Puzzles</strong>: It’s a pressure-plate puzzle, that requires the player to stack three heavy boxes to keep doors open. The system allows desperate players to sacrifice their stealth item (teddy bear) as a weight, creating tense, consequential decisions derived directly from the inventory limitations.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-reflexion-night" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-reflexion-night')">✖</button>
+        <h3>Reflection and Learning</h3>
+        <p style="text-align: justify;">Developing <strong><em>Nightlight</em></strong> in a rapid bootcamp jam was a profound lesson in scope management, difficulty pacing, and thematic constraint. The prompt "Limited Capacity" inspired us to turn an inventory restriction into the core driver of psychological tension. Due to extreme time constraints, we had to rely on AI-generated assets for some narrative illustrations, a constraint that taught me how to adapt production pipelines under pressure without sacrificing the core gameplay loop.</p>
+        <p style="text-align: justify;">Looking back, my main focus for iteration would be difficulty balancing. Currently, the flashlight's energy depletion can feel punishing if it runs out right before the final puzzle. This project deeply reinforced the necessity of rigorous playtesting to balance risk-reward systems, ensuring the game challenges the player without feeling unfair or frustrating.</p>
+    </div>
+</div>
+
+
+<!-- Modales ROMANCE -->
+<div id="modal-detalles-romance" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-detalles-romance')">✖</button>
+        <h3>Project details</h3>
+        <p><strong>Project Type:</strong> Satirical FPS / Dating Sim<br>
+        <strong>Game Jam:</strong> You're Doing That Genre Wrong (and That's Okay)  (Junior Unity Developer Bootcamp)<br>
+        <strong>Team size:</strong> 4 members<br>
+        <strong>Software Used:</strong> Unity 3D<br>
+        <strong>Duration:</strong> 72 hours (March 26th - 29th, 2026)</p>
+    </div>
+</div>
+
+<div id="modal-responsabilidades-romance" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-responsabilidades-romance')">✖</button>
+        <h3>Key Contributions and Responsibilities</h3>
+        <ul>
+            <li><strong>Subversive Systems Design</strong>: Designed the "Affinity Combat" system, replacing traditional FPS damage with an emotional saturation mechanic where enemies actively avoid the player's attacks.</li>
+            <li><strong>Asymmetric AI Concept</strong>: Conceptualized and balanced a dual AI pacing system, reactive fleeing behaviors for standard monsters and a relentless, invincible pursuit logic for the Nemesis (The Principal).</li>
+            <li><strong>Art Direction & Pacing</strong>: Coordinated the vibrant, neon-pink visual identity and the comedic pacing, ensuring the mechanical subversion successfully delivered the intended humor and thematic contrast.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-gameplay-romance" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-gameplay-romance')">✖</button>
+        <h3>Gameplay Components</h3>
+        <ul>
+            <li><strong>Reverse-FPS Combat</strong>: In other words, it’s a subversive gameplay loop where the player is the aggressor of affection. Hitting targets fills their emotional capacity until they "collapse" into collectible heart currency used for progression.</li>
+            <li><strong>Fleeing AI Behavior</strong>: It’s developed in a spatial avoidance system for enemies, forcing the player to master movement prediction and precision aiming in tight corridors to catch targets actively trying to escape.</li>
+            <li><strong>The Nemesis Chase</strong>: The main villain it’s designed with a pacing-breaker mechanic featuring the "Principal", an entity entirely immune to romance. Its presence instantly flips the genre from a comedic shooter to a tense survival horror pursuit, requiring strict resource and stamina management.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-reflexion-romance" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModal('modal-reflexion-romance')">✖</button>
+        <h3>Reflection and Learning</h3>
+        <p style="text-align: justify;">Developing <strong><em>Romance Protocol</em></strong> was a fantastic exercise in genre subversion and mechanical comedy. Designing an FPS where the enemies run away from your bullets proved to be highly engaging and successfully delivered the humor we aimed for.</p>
+        <p style="text-align: justify;">Given the strict 72 hour timeframe, we had to drastically scope down, relying on AI-generated illustrations for narrative beats and compromising on our original low-poly anime aesthetic. If I were to iterate on this project, my main focus would be replacing these temporary assets with custom 3D models to fully realize our visual vision and refining the narrative presentation. This jam reinforced how powerful mechanical subversion can be when paired with decisive scope management.</p>
+    </div>
+</div>
+
+<script defer src="js/main.js"></script>
+
 </body>
+
 </html>
-
-
-
