@@ -21,10 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
             thumbnails.forEach(thumb => thumb.classList.remove('active'));
 
             slides[indiceActual].classList.add('active');
-            if (thumbnails[indiceActual]) thumbnails[indiceActual].classList.add('active');
+            
+            if (thumbnails[indiceActual]) {
+                thumbnails[indiceActual].classList.add('active');
+                
+                // --- Scroll automático hacia la miniatura activa ---
+                thumbnails[indiceActual].scrollIntoView({
+                    behavior: 'smooth', // Hace que el desplazamiento sea fluido
+                    inline: 'nearest',  // Centra o acerca la miniatura dentro del contenedor visible
+                    block: 'nearest'
+                });
+            }
         }
 
-        // El script ahora detecta los clics automáticamente
+        // El script detecta los clics automáticamente
         if (prevBtn) prevBtn.onclick = () => { indiceActual--; mostrarSlide(indiceActual); };
         if (nextBtn) nextBtn.onclick = () => { indiceActual++; mostrarSlide(indiceActual); };
         
