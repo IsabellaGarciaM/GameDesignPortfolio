@@ -49,18 +49,40 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==========================================
 function abrirModal(idModal) {
     const modal = document.getElementById(idModal);
-    if (modal) modal.style.display = 'flex';
+    if (modal) {
+        modal.style.display = 'flex'; // Lo vuelve visible en el DOM
+        document.body.classList.add('modal-open'); // Bloquea el scroll de atrás
+        
+        // Pequeño truco para que la animación CSS se ejecute al cambiar de opacidad/transform
+        setTimeout(() => {
+            modal.classList.add('is-active');
+        }, 10);
+    }
 }
 
 function cerrarModal(idModal) {
     const modal = document.getElementById(idModal);
-    if (modal) modal.style.display = 'none';
+    if (modal) {
+        modal.classList.remove('is-active'); // Quita la clase para animar la salida
+        document.body.classList.remove('modal-open'); // Devuelve el scroll
+        
+        // Espera a que termine la animación (300ms) antes de ocultarlo por completo
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
+    }
 }
 
 // Cierra el pop-up si haces clic por fuera de la caja
 window.onclick = function(event) {
     if (event.target.classList.contains('modal-overlay')) {
-        event.target.style.display = 'none';
+        const modal = event.target;
+        modal.classList.remove('is-active');
+        document.body.classList.remove('modal-open');
+        
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
     }
 }
 
