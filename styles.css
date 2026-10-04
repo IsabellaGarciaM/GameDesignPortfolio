@@ -203,6 +203,10 @@ body {
     position: relative;
     box-shadow: 0 10px 40px rgba(0,0,0,0.8);
     color: #d1d5db;
+    
+    /* --- LÍNEAS NUEVAS PARA ARREGLAR EL POPUP --- */
+    max-height: 85vh; /* Limita la altura máxima al 85% de la pantalla del móvil */
+    overflow-y: auto; /* Activa la barra de desplazamiento interna si el texto es muy largo */
 }
 
 .modal-content h3 { color: #ffffff; margin-top: 0; }
